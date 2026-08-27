@@ -96,7 +96,7 @@ p{margin:0 0 1.1rem}
 
 /* ---------- nav ---------- */
 .nav{
-  position:fixed;inset:0 0 auto 0;z-index:60;height:74px;
+  position:fixed;inset:0 0 auto 0;z-index:60;height:94px;
   display:flex;align-items:center;
   background:rgba(10,13,22,0);border-bottom:1px solid transparent;
   transition:background .45s var(--ease),border-color .45s var(--ease),backdrop-filter .45s var(--ease);
@@ -106,12 +106,8 @@ p{margin:0 0 1.1rem}
 .nav .wrap{position:relative;z-index:1}
 .nav.stuck{background:rgba(10,13,22,.9);backdrop-filter:blur(16px) saturate(1.3);border-bottom-color:var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;gap:13px;text-decoration:none;line-height:1}
-.brand-mark{height:42px;width:auto;flex:none}
-.brand-txt{display:flex;flex-direction:column;line-height:1}
-.brand .n{font-family:var(--display);font-size:1.32rem;letter-spacing:-.035em}
-.brand .n em{font-style:normal;color:var(--blue-text)}
-.brand .t{font-size:.72rem;font-weight:700;letter-spacing:.3em;color:var(--muted);margin-top:5px}
+.brand{display:flex;align-items:center;text-decoration:none;line-height:1}
+.brand-mark{height:78px;width:auto;flex:none}
 .navlinks{display:flex;align-items:center;gap:30px}
 .navlinks a{font-size:.93rem;font-weight:500;text-decoration:none;color:rgba(243,244,248,.82);position:relative;transition:color .3s var(--ease)}
 .navlinks a::after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:var(--blue-lift);transition:right .4s var(--ease)}
@@ -127,7 +123,7 @@ p{margin:0 0 1.1rem}
 .navphone:hover{background:var(--blue-lift);transform:translateY(-1px)}
 
 /* ---------- hero ---------- */
-.hero{position:relative;min-height:100dvh;padding-inline:20px;display:flex;align-items:flex-end;padding:150px 0 66px;overflow:hidden}
+.hero{position:relative;min-height:100dvh;padding-inline:20px;display:flex;align-items:flex-end;padding:170px 0 66px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.06);animation:drift 26s var(--ease) forwards}
 @keyframes drift{to{transform:scale(1)}}
@@ -283,7 +279,7 @@ p{margin:0 0 1.1rem}
   display:grid;place-items:center;align-content:center;gap:26px;grid-auto-flow:row;
   transition:opacity .55s var(--ease),visibility .55s var(--ease);
 }
-.loader img{width:132px;height:auto;opacity:0;transform:scale(.94);animation:markIn .8s var(--ease) forwards}
+.loader img{width:212px;height:auto;opacity:0;transform:scale(.94);animation:markIn .8s var(--ease) forwards}
 .loader .track{width:150px;height:3px;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden}
 .loader .track span{display:block;height:100%;width:100%;border-radius:99px;background:var(--blue-lift);transform-origin:left;transform:scaleX(.04);animation:fill 1.7s var(--ease) forwards}
 .loader .load-name{font-size:.74rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
@@ -294,8 +290,7 @@ html.loading,html.loading body{overflow:hidden}
 
 .foot{border-top:1px solid var(--line);padding:52px 20px 40px;background:var(--ink)}
 .foot .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center}
-.foot .brand .n{font-size:1.16rem}
-.foot .brand-mark{height:50px}
+.foot .brand-mark{height:88px}
 .foot .meta{font-size:.87rem;color:var(--muted);text-align:right;line-height:1.7}
 .foot .meta a{text-decoration:none}
 .foot .meta a:hover{color:var(--blue-text)}
@@ -326,9 +321,12 @@ html.loading,html.loading body{overflow:hidden}
 }
 @media(max-width:640px){
   body{font-size:16px}
+  .nav{height:72px}
+  .brand-mark{height:54px}
+  .foot .brand-mark{height:74px}
   .section{padding:76px 16px}
   .wrap{width:calc(100% - 34px)}
-  .hero{padding:100px 0 36px}
+  .hero{padding:104px 0 36px}
   .hero-grid{gap:26px}
   .hero h1{font-size:clamp(2.5rem,11vw,3.4rem);margin-bottom:16px}
   .hero .prop{font-size:1rem;max-width:none;margin-bottom:24px}
@@ -364,7 +362,7 @@ html.loading,html.loading body{overflow:hidden}
 
 <!-- LOADING SCREEN -->
 <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading">
-  <img src="images/logo-crest.png" alt="" width="440" height="318">
+  <img src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
   <div class="track"><span></span></div>
   <div class="load-name">Cattermoles Butchery</div>
 </div>
@@ -372,12 +370,8 @@ html.loading,html.loading body{overflow:hidden}
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="#top">
-      <img class="brand-mark" src="images/logo-crest.png" alt="" width="440" height="318">
-      <span class="brand-txt">
-        <span class="n">CATTER<em>MOLES</em></span>
-        <span class="t">BUTCHERY</span>
-      </span>
+    <a class="brand" href="#top" aria-label="Cattermoles Butchery, back to top">
+      <img class="brand-mark" src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
     </a>
     <nav class="navlinks">
       <a href="#homekill">Homekill</a>
@@ -740,12 +734,8 @@ html.loading,html.loading body{overflow:hidden}
 <!-- FOOTER -->
 <footer class="foot">
   <div class="wrap">
-    <a class="brand" href="#top">
-      <img class="brand-mark" src="images/logo-crest.png" alt="" width="440" height="318">
-      <span class="brand-txt">
-        <span class="n">CATTER<em>MOLES</em></span>
-        <span class="t">BUTCHERY</span>
-      </span>
+    <a class="brand" href="#top" aria-label="Cattermoles Butchery, back to top">
+      <img class="brand-mark" src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
     </a>
     <div class="meta">
       159 Williams Street, Kaiapoi 7630<br>
