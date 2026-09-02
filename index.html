@@ -1,831 +1,666 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cattermoles Butchery Kaiapoi | Homekill Specialists, North Canterbury</title>
-<meta name="description" content="Award winning butchery on Williams Street, Kaiapoi. Homekill and wild game processing, sausages made in store, gluten free smallgoods and raffle trays. Call 03 327 8219.">
-<link rel="icon" href="images/logo-mark.png" type="image/png">
-<link rel="apple-touch-icon" href="images/logo-mark.png">
+<title>Cattermoles Butchery | Butcher &amp; Home Kill, Kaiapoi</title>
+<meta name="description" content="Award-winning butchery on Williams Street, Kaiapoi. Steaks cut to order, NZ champion sausages, bacon and ham, meat packs and home kill processing.">
+<meta property="og:title" content="Cattermoles Butchery | Butcher &amp; Home Kill, Kaiapoi">
+<meta property="og:description" content="Award-winning butchery on Williams Street, Kaiapoi. Steaks cut to order, NZ champion sausages, meat packs and home kill processing.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cattermoles Butchery Kaiapoi | Homekill Specialists">
-<meta property="og:description" content="Supreme champion sausage makers and homekill specialists, 159 Williams Street, Kaiapoi.">
-<meta property="og:image" content="images/hero-counter.jpg">
-<meta property="og:locale" content="en_NZ">
-<meta name="theme-color" content="#0A0D16">
-
+<meta property="og:image" content="img/hero-block.jpg">
+<link rel="icon" type="image/png" href="img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#0A0D16;
-  --ink-2:#0F1421;
-  --ink-3:#151C2D;
-  --navy:#001C6F;
-  --blue:#0047D5;
-  --blue-lift:#2E6BFF;
-  --blue-text:#7BA2FF;
-  --bone:#F3F4F8;
-  --muted:#A5AEC4;
-  --line:rgba(255,255,255,.10);
-  --line-strong:rgba(255,255,255,.18);
-  --display:'Archivo Black',sans-serif;
-  --body:'Archivo',sans-serif;
-  --r:14px;
-  --shadow:0 12px 16px -12px rgba(0,0,0,.8);
-  --wrap:1180px;
-  --ease:cubic-bezier(.16,1,.3,1);
+  --ink:#1b1a18;
+  --ink-2:#242220;
+  --ink-3:#2d2a27;
+  --bone:#f3efe7;
+  --bone-2:#ece7dd;
+  --red:#b0392d;
+  --red-deep:#8f2d23;
+  --red-text:#dd6a58;
+  --text-dark:#3b3733;
+  --text-light:#e9e5dd;
+  --muted-light:#b7b0a5;
+  --line-dark:rgba(233,229,221,.14);
+  --line-light:rgba(59,55,51,.16);
+  --radius:10px;
+  --display:'Big Shoulders Display',sans-serif;
+  --body:'IBM Plex Sans',sans-serif;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--ink);color:var(--bone);
-  font-family:var(--body);font-size:17px;line-height:1.7;font-weight:400;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
-::selection{background:var(--blue);color:#fff}
-::-webkit-scrollbar{width:11px}
-::-webkit-scrollbar-track{background:var(--ink)}
-::-webkit-scrollbar-thumb{background:#26304a;border-radius:99px;border:3px solid var(--ink)}
-::-webkit-scrollbar-thumb:hover{background:var(--blue)}
-:focus-visible{outline:2px solid var(--blue-lift);outline-offset:3px;border-radius:4px}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:-.03em;line-height:1.02;margin:0}
-h2{font-size:clamp(2.1rem,4.6vw,3.4rem)}
-h3{font-size:1.22rem;letter-spacing:-.02em;line-height:1.2}
-p{margin:0 0 1.1rem}
-.wrap{width:min(100% - 44px,var(--wrap));margin-inline:auto}
-.section{padding:112px 20px;position:relative}
-.lead{font-size:1.09rem;color:var(--muted);max-width:60ch}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);background:var(--ink);color:var(--text-light);font-size:16px;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block;image-orientation:from-image}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--red);color:#fff}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.01em;line-height:1.05}
 
-/* ---------- buttons ---------- */
-.btn{
-  display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 30px;
-  border-radius:99px;font-weight:700;font-size:.98rem;letter-spacing:-.01em;
-  text-decoration:none;border:1px solid transparent;cursor:pointer;white-space:nowrap;
-  transition:transform .35s var(--ease),background .3s var(--ease),box-shadow .35s var(--ease),border-color .3s var(--ease);
-}
-.btn svg{width:19px;height:19px;flex:none}
-.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 16px -8px rgba(0,0,0,.6)}
-.btn-primary:hover{background:var(--blue-lift);transform:translateY(-2px);box-shadow:0 14px 24px -10px rgba(0,0,0,.7)}
-.btn-primary:active{transform:translateY(0) scale(.985)}
-.btn-ghost{background:rgba(20,26,42,.92);color:var(--bone);border-color:var(--line-strong)}
-.btn-ghost:hover{background:rgba(32,41,64,.96);border-color:rgba(255,255,255,.34);transform:translateY(-2px)}
-.btn-ghost:active{transform:translateY(0) scale(.985)}
-.btn-wide{width:100%;justify-content:center}
+/* intro overlay */
+#intro{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;transition:opacity .6s ease,visibility .6s}
+#intro img{width:84px;height:84px;filter:invert(1) brightness(1.1);opacity:0;animation:introFade .7s ease .1s forwards}
+#intro .intro-name{font-family:var(--display);font-weight:800;font-size:1.6rem;text-transform:uppercase;letter-spacing:.14em;opacity:0;animation:introFade .7s ease .3s forwards}
+#intro.done{opacity:0;visibility:hidden}
+@keyframes introFade{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){#intro{display:none}}
 
-/* ---------- google review badge ---------- */
-.gbadge{
-  display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 17px;
-  border-radius:99px;text-decoration:none;border:1px solid var(--line-strong);
-  background:#0B0F1A;
-  transition:border-color .3s var(--ease),transform .35s var(--ease),background .3s var(--ease);
-}
-.gbadge:hover{border-color:rgba(255,255,255,.4);transform:translateY(-2px);background:#111726}
-.gbadge .gmark{width:20px;height:20px;flex:none}
-.gbadge b{font-family:var(--display);font-size:1.02rem;letter-spacing:-.02em;line-height:1}
-.gbadge .stars{display:flex;gap:2px}
-.gbadge .stars svg{width:13px;height:13px;fill:#FFC02D}
-.gbadge small{font-size:.8rem;color:var(--muted);line-height:1;letter-spacing:.01em}
-.gbadge-light{background:rgba(255,255,255,.05);border-color:var(--line)}
-.gbadge-sm{height:46px;padding:0 16px;gap:9px}
-.gbadge-sm b{font-size:.94rem}
-
-/* ---------- nav ---------- */
-.nav{
-  position:fixed;inset:0 0 auto 0;z-index:60;height:94px;
-  display:flex;align-items:center;
-  background:rgba(10,13,22,0);border-bottom:1px solid transparent;
-  transition:background .45s var(--ease),border-color .45s var(--ease),backdrop-filter .45s var(--ease);
-}
-.nav::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,19,.97) 0%,rgba(8,11,19,.9) 62%,rgba(8,11,19,.45) 100%);transition:opacity .45s var(--ease);pointer-events:none}
-.nav.stuck::before{opacity:0}
-.nav .wrap{position:relative;z-index:1}
-.nav.stuck{background:rgba(10,13,22,.9);backdrop-filter:blur(16px) saturate(1.3);border-bottom-color:var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;text-decoration:none;line-height:1}
-.brand-mark{height:78px;width:auto;flex:none}
-.navlinks{display:flex;align-items:center;gap:30px}
-.navlinks a{font-size:.93rem;font-weight:500;text-decoration:none;color:rgba(243,244,248,.82);position:relative;transition:color .3s var(--ease)}
-.navlinks a::after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:var(--blue-lift);transition:right .4s var(--ease)}
-.navlinks a:hover{color:#fff}
-.navlinks a:hover::after{right:0}
-.navphone{
-  display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;line-height:1;
-  border-radius:99px;background:var(--blue);color:#fff;text-decoration:none;
-  font-weight:700;font-size:.93rem;letter-spacing:-.01em;
-  transition:background .3s var(--ease),transform .3s var(--ease);
-}
-.navphone svg{width:16px;height:16px;flex:none}
-.navphone:hover{background:var(--blue-lift);transform:translateY(-1px)}
-
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100dvh;padding-inline:20px;display:flex;align-items:flex-end;padding:170px 0 66px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 42%;transform:scale(1.06);animation:drift 26s var(--ease) forwards}
-@keyframes drift{to{transform:scale(1)}}
-.hero-bg::after{
-  content:"";position:absolute;inset:0;
-  background:
-    linear-gradient(180deg,rgba(10,13,22,.35) 0%,rgba(10,13,22,0) 26%,rgba(10,13,22,.55) 84%,var(--ink) 100%),
-    linear-gradient(94deg,rgba(0,20,80,.3) 0%,rgba(0,20,80,0) 58%);
-}
-.hero .wrap{position:relative;z-index:2}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.82fr);gap:40px;align-items:end}
-.hero h1{font-size:clamp(2.9rem,7.4vw,5.6rem);letter-spacing:-.045em;margin-bottom:22px}
-.hero h1 span{display:block;color:var(--blue-text)}
-.hero .prop{font-size:clamp(1.05rem,1.9vw,1.3rem);color:rgba(243,244,248,.9);max-width:34ch;margin-bottom:34px;font-weight:500}
-.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-
-/* rotating review card */
-.rotator{
-  background:#0B0F1A;
-  border:1px solid var(--line-strong);border-radius:var(--r);padding:26px 26px 22px;
-  position:relative;min-height:222px;
-}
-.rotator .qm{position:absolute;top:16px;right:20px;font-family:var(--display);font-size:3.4rem;color:rgba(123,162,255,.34);line-height:1}
-.rot-item{position:absolute;left:26px;right:26px;top:26px;opacity:0;transform:translateY(10px);transition:opacity .7s var(--ease),transform .7s var(--ease);pointer-events:none}
-.rot-item.on{opacity:1;transform:none;pointer-events:auto}
-.rot-item .stars{display:flex;gap:3px;margin-bottom:12px}
-.rot-item .stars svg{width:15px;height:15px;fill:#FFC02D}
-.rot-item p{font-size:.98rem;line-height:1.62;margin:0 0 14px;color:rgba(243,244,248,.93)}
-.rot-item .who{font-size:.82rem;font-weight:700;color:var(--muted);letter-spacing:.02em}
-.rot-dots{position:absolute;left:26px;bottom:18px;display:flex;gap:7px}
-.rot-dots button{width:22px;height:3px;border-radius:99px;border:0;padding:0;background:rgba(255,255,255,.22);cursor:pointer;transition:background .3s var(--ease)}
-.rot-dots button[aria-current="true"]{background:var(--blue-lift)}
-
-/* ---------- awards ---------- */
-.awards{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%)}
-.awards-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.72fr);gap:64px;align-items:center}
-.award-list{margin:34px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
-.award-list li{display:grid;grid-template-columns:88px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}
-.award-yr{font-family:var(--display);font-size:1.34rem;color:var(--blue-text);letter-spacing:-.03em;line-height:1.2}
-.award-b{font-weight:700;font-size:1.02rem;margin-bottom:3px}
-.award-b .medal{color:var(--muted);font-weight:600}
-.award-c{font-size:.94rem;color:var(--muted);line-height:1.6}
-.awards-img{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
-.awards-img img{width:100%;height:auto}
-.awards-img .cap{
-  position:absolute;left:0;right:0;bottom:0;padding:52px 24px 20px;
-  background:linear-gradient(180deg,rgba(10,13,22,0),rgba(10,13,22,.94));
-  font-size:.88rem;color:rgba(243,244,248,.9);font-weight:600;
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 22px;background:rgba(27,26,24,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-dark)}
+.nav-brand{display:flex;align-items:center;gap:10px;min-width:0}
+.nav-brand img{width:42px;height:42px;filter:invert(1) brightness(1.1);flex-shrink:0}
+.nav-brand span{font-family:var(--display);font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{font-size:.92rem;font-weight:500;color:var(--muted-light);transition:color .25s}
+.nav-links a:hover{color:#fff}
+.nav-phone{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border:1px solid var(--line-dark);border-radius:999px;font-size:.9rem;font-weight:600;line-height:1;color:#fff;transition:border-color .25s,background .25s}
+.nav-phone:hover{border-color:var(--red);background:rgba(176,57,45,.15)}
+.nav-phone svg{width:15px;height:15px;color:var(--red-text)}
+#navToggle{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:#fff;align-items:center;justify-content:center}
+#navToggle svg{width:26px;height:26px}
+#mobileMenu{display:none;position:fixed;top:68px;left:0;right:0;z-index:99;background:rgba(27,26,24,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-dark);padding:10px 22px 22px;flex-direction:column;gap:4px}
+#mobileMenu a{padding:13px 4px;font-size:1.05rem;font-weight:500;border-bottom:1px solid var(--line-dark)}
+#mobileMenu a.mm-call{margin-top:12px;border:0;background:var(--red);color:#fff;border-radius:var(--radius);text-align:center;font-weight:600;min-height:48px;display:flex;align-items:center;justify-content:center}
+#mobileMenu.open{display:flex}
+@media (max-width:920px){
+  .nav-links{display:none}
+  #navToggle{display:inline-flex}
+  .nav-phone{display:none}
 }
 
-/* ---------- homekill band ---------- */
-.homekill{position:relative;overflow:hidden;background:var(--navy)}
-.homekill-bg{position:absolute;inset:0;z-index:0}
-.homekill-bg img{width:100%;height:100%;object-fit:cover;opacity:.24}
-.homekill-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(103deg,rgba(0,20,80,.95) 0%,rgba(0,28,111,.72) 55%,rgba(10,13,22,.9) 100%)}
-.homekill .wrap{position:relative;z-index:2}
-.homekill h2{max-width:16ch}
-.homekill .lead{color:rgba(243,244,248,.84);margin-top:18px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;margin-top:60px;border-top:1px solid rgba(255,255,255,.24)}
-.step{padding:32px 0 4px}
+/* hero */
+.hero{position:relative;min-height:100dvh;display:flex;align-items:flex-end;background:var(--ink-2);overflow:hidden}
+.hero-slides{position:absolute;inset:0}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.hero-slide.active{opacity:1}
+.hero-slide img{width:100%;height:100%;object-fit:cover}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,26,24,.62) 0%,rgba(27,26,24,.45) 45%,rgba(27,26,24,.88) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1120px;margin:0 auto;padding:120px 22px 64px}
+.hero-eyebrow{font-size:.82rem;font-weight:600;text-transform:uppercase;letter-spacing:.22em;color:var(--red-text);margin-bottom:16px}
+.hero h1{font-size:clamp(2.7rem,7.2vw,4.8rem);font-weight:800;max-width:15ch;color:#fff}
+.hero-sub{margin:18px 0 30px;max-width:46ch;font-size:1.06rem;color:var(--text-light)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 28px;border-radius:var(--radius);font-family:var(--body);font-size:1rem;font-weight:600;line-height:1;cursor:pointer;transition:transform .2s,background .25s,border-color .25s}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn svg{width:17px;height:17px}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-ghost{border:1px solid rgba(233,229,221,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.hero-review{margin-top:34px;max-width:430px;border:1px solid rgba(233,229,221,.22);border-radius:var(--radius);background:rgba(27,26,24,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:16px 18px;min-height:118px}
+.hero-review .stars{display:flex;gap:3px;margin-bottom:8px}
+.hero-review .stars svg{width:14px;height:14px;color:var(--red-text)}
+.hero-review blockquote{font-size:.93rem;line-height:1.55;font-style:italic;transition:opacity .5s}
+.hero-review .hr-name{display:block;margin-top:7px;font-style:normal;font-size:.8rem;font-weight:600;color:var(--muted-light)}
+.hero-review.fading blockquote{opacity:0}
 
-.step .ic{width:34px;height:34px;color:var(--blue-text);margin-bottom:16px}
-.step .ic svg{width:100%;height:100%}
-.step h3{margin-bottom:9px}
-.step p{font-size:.93rem;color:rgba(243,244,248,.76);line-height:1.62;margin:0}
-.homekill-cta{margin-top:52px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-
-/* ---------- section head with badge ---------- */
-.sechead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:26px;margin-bottom:52px}
-.sechead .txt{flex:1 1 auto;min-width:0}
-.sechead .txt .lead{max-width:50ch}
-.sechead .lead{margin-top:16px;margin-bottom:0}
-
-/* ---------- service cards ---------- */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.card{
-  background:var(--ink-3);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
-  display:flex;flex-direction:column;
-  transition:transform .45s var(--ease),border-color .45s var(--ease),box-shadow .45s var(--ease);
-}
-.card:hover{transform:translateY(-6px);border-color:rgba(46,107,255,.55)}
-.card-img{aspect-ratio:16/11;overflow:hidden;background:var(--ink-2)}
-.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
-.card:hover .card-img img{transform:scale(1.06)}
-.card-body{padding:24px 24px 28px;display:flex;flex-direction:column;flex:1}
-.card-label{display:flex;align-items:center;gap:8px;font-size:.74rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--blue-text);margin-bottom:12px}
-.card-label svg{width:15px;height:15px;flex:none}
-.card h3{margin-bottom:10px}
-.card p{font-size:.94rem;color:var(--muted);line-height:1.65;margin:0}
-
-/* ---------- cabinet filmstrip ---------- */
-.cabinet{background:var(--ink-2)}
-.strip{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:210px 210px;gap:18px}
-.strip figure{margin:0;position:relative;border-radius:var(--r);overflow:hidden;background:var(--ink-3)}
-.strip figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
-.strip figure:hover img{transform:scale(1.07)}
-.strip .tall{grid-row:span 2}
-.strip figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:44px 18px 15px;
-  background:linear-gradient(180deg,rgba(10,13,22,0),rgba(10,13,22,.92));
-  font-size:.85rem;font-weight:600;color:rgba(243,244,248,.94);
-}
-
-/* ---------- reviews ---------- */
-.reviews{background:var(--ink-2)}
-.rev-boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
-.rev{
-  background:var(--ink-3);border:1px solid var(--line);border-radius:var(--r);
-  padding:28px 28px 26px;display:flex;flex-direction:column;
-  transition:border-color .4s var(--ease),transform .4s var(--ease);
-}
-.rev:hover{border-color:rgba(46,107,255,.5);transform:translateY(-4px)}
-.rev-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
-.rev-head .stars{display:flex;gap:3px}
-.rev-head .stars svg{width:15px;height:15px;fill:#FFC02D}
-.rev-head .gsrc{width:17px;height:17px;flex:none;opacity:.9}
-.rev p{font-size:.99rem;line-height:1.66;margin:0 0 22px;color:rgba(243,244,248,.92);flex:1}
-.rev .who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:18px}
-.rev .av{width:38px;height:38px;border-radius:99px;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:.86rem;flex:none;letter-spacing:-.02em}
-.rev .who-txt{display:flex;flex-direction:column;line-height:1.35;min-width:0}
-.rev .who-txt b{font-weight:700;font-size:.94rem}
-.rev .who-txt span{font-size:.85rem;color:var(--muted)}
-.rev-more{display:flex;justify-content:center;margin-top:44px}
-
-/* ---------- contact ---------- */
-.contact{background:linear-gradient(180deg,var(--ink-2) 0%,var(--ink) 100%)}
-.cbox{
-  max-width:1120px;margin-inline:auto;background:var(--ink-3);
-  border:1px solid var(--line-strong);border-radius:var(--r);overflow:hidden;
-  display:grid;grid-template-columns:1fr 1fr;
-}
-.cmap{min-height:100%;background:var(--ink-2);position:relative}
-.cmap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.34) contrast(1.06)}
-.cinfo{padding:44px 44px 46px}
-.cinfo h2{font-size:clamp(1.8rem,3vw,2.5rem);margin-bottom:12px}
-.cinfo .lead{margin-bottom:26px;font-size:1rem}
-.cbtns{display:grid;gap:12px;margin-bottom:30px}
-.cdetails{display:grid;gap:18px;border-top:1px solid var(--line);padding-top:26px}
-.cd{display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start}
-.cd .ic{width:34px;height:34px;border-radius:99px;background:rgba(46,107,255,.16);display:grid;place-items:center;color:var(--blue-lift)}
-.cd .ic svg{width:17px;height:17px}
-.cd .ic{color:var(--blue-text)}
-.cd .k{font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;line-height:1}
-.cd .v{font-size:.99rem;font-weight:600;line-height:1.5}
-.cd .v a{text-decoration:none}
-.cd .v a:hover{color:var(--blue-text)}
-.cd .v span{display:block;color:var(--muted);font-weight:400;font-size:.93rem}
-
-/* ---------- footer ---------- */
-/* ---------- loading screen ---------- */
-.loader{
-  position:fixed;inset:0;z-index:200;background:var(--ink);
-  display:grid;place-items:center;align-content:center;gap:26px;grid-auto-flow:row;
-  transition:opacity .55s var(--ease),visibility .55s var(--ease);
-}
-.loader img{width:212px;height:auto;opacity:0;transform:scale(.94);animation:markIn .8s var(--ease) forwards}
-.loader .track{width:150px;height:3px;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden}
-.loader .track span{display:block;height:100%;width:100%;border-radius:99px;background:var(--blue-lift);transform-origin:left;transform:scaleX(.04);animation:fill 1.7s var(--ease) forwards}
-.loader .load-name{font-size:.74rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
-@keyframes markIn{to{opacity:1;transform:none}}
-@keyframes fill{0%{transform:scaleX(.04)}62%{transform:scaleX(.72)}100%{transform:scaleX(1)}}
-.loader.done{opacity:0;visibility:hidden}
-html.loading,html.loading body{overflow:hidden}
-
-.foot{border-top:1px solid var(--line);padding:52px 20px 40px;background:var(--ink)}
-.foot .wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center}
-.foot .brand-mark{height:88px}
-.foot .meta{font-size:.87rem;color:var(--muted);text-align:right;line-height:1.7}
-.foot .meta a{text-decoration:none}
-.foot .meta a:hover{color:var(--blue-text)}
-
-/* ---------- reveal ---------- */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+/* section shell */
+section{padding:92px 22px}
+.wrap{max-width:1120px;margin:0 auto}
+.sec-head{max-width:60ch;margin-bottom:48px}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.1rem);font-weight:800}
+.sec-head p{margin-top:12px;font-size:1.03rem}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
-.reveal.d1{transition-delay:.09s}
-.reveal.d2{transition-delay:.18s}
-.reveal.d3{transition-delay:.27s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
-/* ---------- responsive ---------- */
-@media(max-width:1040px){
-  .hero-grid{grid-template-columns:1fr;gap:40px}
-  .rotator{max-width:520px}
-  .awards-grid{grid-template-columns:1fr;gap:44px}
-  .steps{grid-template-columns:repeat(2,1fr);gap:30px 40px}
-  .cards{grid-template-columns:repeat(2,1fr)}
-  .rev-boxes{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .strip{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
-  .strip .tall{grid-row:span 1}
+/* services */
+.services{background:var(--bone);color:var(--text-dark)}
+.services .sec-head h2{color:var(--ink)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 30px -18px rgba(59,45,35,.35);transition:transform .3s ease,box-shadow .3s ease}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 22px 40px -20px rgba(59,45,35,.45)}
+.svc-card .svc-img{aspect-ratio:16/9;overflow:hidden}
+.svc-card .svc-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05);transition:transform .5s ease}
+.svc-card:hover .svc-img img{transform:scale(1.05)}
+.svc-body{padding:22px 22px 26px}
+.svc-label{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:var(--red);margin-bottom:10px}
+.svc-label svg{width:14px;height:14px}
+.svc-body h3{font-size:1.45rem;font-weight:700;color:var(--ink);margin-bottom:8px}
+.svc-body p{font-size:.94rem;line-height:1.65}
+@media (max-width:920px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.svc-grid{grid-template-columns:1fr}}
+
+/* packs */
+.packs{background:var(--ink-2)}
+.packs .sec-head p{color:var(--muted-light)}
+.packs-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:auto;gap:20px}
+.pack-photo{grid-column:span 2;border-radius:var(--radius);overflow:hidden;min-height:230px;position:relative}
+.pack-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+.pack-card{background:var(--ink-3);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;transition:border-color .3s,transform .3s}
+.pack-card:hover{border-color:rgba(176,57,45,.6);transform:translateY(-4px)}
+.pack-card h3{font-size:1.3rem;font-weight:700;color:#fff}
+.pack-price{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--red-text);margin:6px 0 14px;line-height:1}
+.pack-card ul{list-style:none;font-size:.9rem;color:var(--muted-light);display:flex;flex-direction:column;gap:6px}
+.pack-card li{display:flex;gap:9px;align-items:flex-start}
+.pack-card li svg{width:13px;height:13px;color:var(--red-text);flex-shrink:0;margin-top:5px}
+.packs-note{margin-top:26px;font-size:.88rem;color:var(--muted-light);max-width:62ch}
+@media (max-width:920px){.packs-grid{grid-template-columns:repeat(2,1fr)}.pack-photo{grid-column:span 2;min-height:200px}}
+@media (max-width:640px){.packs-grid{grid-template-columns:1fr}.pack-photo{grid-column:span 1}}
+
+/* about */
+.about{background:var(--bone);color:var(--text-dark)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
+.about-tag{position:absolute;left:-1px;bottom:-1px;background:var(--red);color:#fff;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;padding:10px 18px;border-radius:0 var(--radius) 0 var(--radius)}
+.about-copy h2{font-size:clamp(2rem,4.4vw,2.9rem);font-weight:800;color:var(--ink);margin-bottom:18px}
+.about-copy p{margin-bottom:14px;font-size:1rem}
+.about-list{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.about-list li{display:flex;align-items:flex-start;gap:12px;font-weight:500;color:var(--ink)}
+.about-list svg{width:20px;height:20px;color:var(--red);flex-shrink:0;margin-top:3px}
+@media (max-width:880px){.about-grid{grid-template-columns:1fr;gap:36px}}
+
+/* crew */
+.crew{background:var(--bone-2);color:var(--text-dark)}
+.crew .sec-head h2{color:var(--ink)}
+.crew-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.crew-card{background:#fff;border-radius:var(--radius);padding:30px 20px;text-align:center;box-shadow:0 10px 26px -18px rgba(59,45,35,.35)}
+.crew-avatar{width:84px;height:84px;margin:0 auto 16px;border-radius:50%;background:var(--ink);border:3px solid var(--red);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:1.7rem;color:var(--bone);letter-spacing:.04em}
+.crew-card h3{font-size:1.25rem;font-weight:700;color:var(--ink)}
+.crew-role{font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--red);margin-top:4px}
+@media (max-width:880px){.crew-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.crew-grid{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--bone);color:var(--text-dark)}
+.reviews .sec-head h2{color:var(--ink)}
+.rev-badge{display:inline-block;margin-bottom:14px;font-size:.78rem;font-weight:600;letter-spacing:.02em;color:var(--red-deep);border:1px solid rgba(176,57,45,.4);border-radius:999px;padding:5px 14px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:38px}
+.rev-card{background:#fff;border-radius:var(--radius);padding:26px 24px;box-shadow:0 10px 26px -18px rgba(59,45,35,.35);display:flex;flex-direction:column;gap:12px}
+.rev-card .stars{display:flex;gap:3px}
+.rev-card .stars svg{width:15px;height:15px;color:var(--red)}
+.rev-card p{font-size:.95rem;line-height:1.6}
+.rev-card .rev-name{font-weight:600;color:var(--ink);font-size:.9rem}
+.rev-card .rev-name span{display:block;font-weight:400;font-size:.8rem;color:#7d766d}
+.rev-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink-3)}
+@media (max-width:880px){.rev-grid{grid-template-columns:1fr}}
+
+/* review banner */
+.rev-banner{background:var(--ink-2);border-top:1px solid var(--line-dark)}
+.rev-banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.rev-banner h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:800;color:#fff;max-width:22ch}
+.rev-banner p{color:var(--muted-light);margin-top:6px;max-width:48ch}
+
+/* contact */
+.contact{background:var(--ink)}
+.contact-card{display:grid;grid-template-columns:1fr 1fr;background:var(--ink-2);border:1px solid var(--line-dark);border-radius:calc(var(--radius) + 4px);overflow:hidden}
+.contact-map{position:relative;min-height:420px}
+.contact-map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.25) contrast(1.02)}
+.contact-info{padding:40px 38px;display:flex;flex-direction:column;gap:14px}
+.contact-info h2{font-size:clamp(1.9rem,3.8vw,2.5rem);font-weight:800;color:#fff;margin-bottom:6px}
+.contact-btns{display:flex;flex-direction:column;gap:12px;margin-bottom:10px}
+.contact-btns .btn{width:100%}
+.c-row{display:flex;align-items:flex-start;gap:13px;font-size:.95rem;color:var(--text-light)}
+.c-row svg{width:18px;height:18px;color:var(--red-text);flex-shrink:0;margin-top:4px}
+.c-row strong{color:#fff;font-weight:600}
+.c-row .hours span{display:block}
+.socials{display:flex;gap:12px;margin-top:8px}
+.socials a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line-dark);border-radius:50%;color:var(--text-light);transition:border-color .25s,color .25s,background .25s}
+.socials a:hover{border-color:var(--red);color:#fff;background:rgba(176,57,45,.15)}
+.socials svg{width:18px;height:18px}
+@media (max-width:880px){
+  .contact-card{grid-template-columns:1fr}
+  .contact-map{min-height:300px;order:2}
+  .contact-info{order:1;padding:30px 24px}
 }
-@media(max-width:860px){
-  .navlinks{display:none}
-  .cbox{grid-template-columns:1fr}
-  .cmap{min-height:320px;order:2}
-  .cinfo{order:1;padding:36px 28px 40px}
-}
-@media(max-width:640px){
-  body{font-size:16px}
-  .nav{height:72px}
-  .brand-mark{height:54px}
-  .foot .brand-mark{height:74px}
-  .section{padding:76px 16px}
-  .wrap{width:calc(100% - 34px)}
-  .hero{padding:104px 0 36px}
-  .hero-grid{gap:26px}
-  .hero h1{font-size:clamp(2.5rem,11vw,3.4rem);margin-bottom:16px}
-  .hero .prop{font-size:1rem;max-width:none;margin-bottom:24px}
-  .hero-cta{gap:11px}
-  .btn,.gbadge{height:50px;width:100%;justify-content:center}
-  .rotator{min-height:214px;padding:20px 20px 20px}
-  .rot-item{top:20px;left:20px;right:20px}
-  .rot-item p{font-size:.92rem;margin-bottom:12px}
-  .rot-dots{left:20px;bottom:15px}
-  .rotator .qm{font-size:2.6rem;top:12px;right:16px}
-  .cards{grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr;gap:0}
-  .step{padding:26px 0}
-  .step + .step{border-top:1px solid rgba(255,255,255,.16)}
-  .rev-boxes{grid-template-columns:1fr;gap:18px}
-  .rev{padding:24px 22px 22px}
-  .strip{grid-template-columns:1fr;grid-template-rows:none}
-  .strip figure{height:230px}
-  .award-list li{grid-template-columns:1fr;gap:6px}
-  .foot .wrap{justify-content:flex-start}
-  .foot .meta{text-align:left}
-}
-@media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-  .reveal{opacity:1;transform:none}
-  .hero-bg img{transform:none;animation:none}
-  .loader img{animation:none;opacity:1;transform:none}
-  .loader .track span{animation:none;transform:scaleX(1)}
-}
+
+/* footer */
+footer{background:#151412;border-top:1px solid var(--line-dark);padding:48px 22px 34px}
+.foot-grid{max-width:1120px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{width:52px;height:52px;filter:invert(1) brightness(1.1)}
+.foot-brand div{font-family:var(--display);font-weight:800;font-size:1.2rem;text-transform:uppercase;letter-spacing:.08em}
+.foot-brand small{display:block;font-family:var(--body);font-weight:400;font-size:.78rem;text-transform:none;letter-spacing:0;color:var(--muted-light)}
+.foot-links{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a{font-size:.9rem;color:var(--muted-light);transition:color .25s}
+.foot-links a:hover{color:#fff}
+.foot-bottom{max-width:1120px;margin:30px auto 0;padding-top:20px;border-top:1px solid var(--line-dark);font-size:.82rem;color:#7d766d;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
 </style>
 </head>
 <body>
 
-<!-- LOADING SCREEN -->
-<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading">
-  <img src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
-  <div class="track"><span></span></div>
+<div id="intro" aria-hidden="true">
+  <img src="img/logo.png" alt="">
+  <div class="intro-name">Cattermoles Butchery</div>
 </div>
 
-<!-- NAV -->
-<header class="nav" id="nav">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Cattermoles Butchery, back to top">
-      <img class="brand-mark" src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
-    </a>
-    <nav class="navlinks">
-      <a href="#homekill">Homekill</a>
-      <a href="#services">What we do</a>
-      <a href="#cabinet">In the cabinet</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Find us</a>
-    </nav>
-    <a class="navphone" href="tel:+6433278219">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2z"/></svg>
-      03 327 8219
-    </a>
+<nav aria-label="Main">
+  <a class="nav-brand" href="#top">
+    <img src="img/logo.png" alt="Cattermoles Butchery logo" width="42" height="42">
+    <span>Cattermoles Butchery</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#meat">Behind the glass</a></li>
+    <li><a href="#packs">Meat packs</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-phone" href="tel:+0278837805">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    027 883 7805
+  </a>
+  <button id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+  </button>
+</nav>
+<div id="mobileMenu">
+  <a href="#meat">Behind the glass</a>
+  <a href="#packs">Meat packs</a>
+  <a href="#about">About</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a class="mm-call" href="tel:+0278837805">Call the shop</a>
+</div>
+
+<header class="hero" id="top">
+  <div class="hero-slides" id="heroSlides">
+    <div class="hero-slide active"><img src="img/hero-block.jpg" alt="Raw steaks resting on a butcher's block" fetchpriority="high" width="1920" height="1280"></div>
+    <div class="hero-slide"><img src="img/hero-smallgoods.jpg" alt="Sliced smoked meat on a chopping board" loading="lazy" width="1920" height="1080"></div>
+    <div class="hero-slide"><img src="img/hero-table.jpg" alt="A table loaded with steak, brisket and sides" loading="lazy" width="1920" height="1280"></div>
+  </div>
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Butcher &amp; Home Kill, Kaiapoi</p>
+    <h1>Award-winning meat, cut fresh in Kaiapoi</h1>
+    <p class="hero-sub">Steaks cut to order, NZ champion sausages and home kill processing at 159 Williams Street.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-red" href="tel:+0278837805">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call the shop
+      </a>
+      <a class="btn btn-ghost" href="#contact">Find us</a>
+    </div>
+    <div class="hero-review" id="heroReview">
+      <div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+      </div>
+      <blockquote id="heroQuote">Best sausages in North Canterbury, no contest. The jalapeno and cheese ones never make it to the freezer.<span class="hr-name" id="heroName">Mike T, Kaiapoi</span></blockquote>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-bg">
-    <img src="images/hero-counter.jpg" alt="The Cattermoles Butchery display counter in Kaiapoi, stacked with steaks, chops, mince and fresh sausages" fetchpriority="high">
-  </div>
+<section class="services" id="meat">
   <div class="wrap">
-    <div class="hero-grid">
-      <div>
-        <h1>Cattermoles<span>Butchery</span></h1>
-        <p class="prop">Kaiapoi's homekill specialists, and the butchers behind New Zealand's supreme champion sausage.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="tel:+6433278219">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2z"/></svg>
-            Call the shop
-          </a>
-          <a class="btn btn-ghost" href="#homekill">Book a homekill</a>
-          <a class="gbadge" href="#reviews" aria-label="Rated 4.4 out of 5 from 42 Google reviews, read them below">
-            <svg class="gmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg>
-            <span><b>4.4</b></span>
-            <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
-            <small>42 Google reviews</small>
-          </a>
+    <div class="sec-head reveal">
+      <h2>Behind the glass</h2>
+      <p>Everything is cut, made and smoked on site at Williams Street. If you want something done a particular way, just ask over the counter.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-steak.jpg" alt="Raw sirloin steak with garlic and peppercorns on a board" loading="lazy" width="900" height="1600"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>Beef &amp; Lamb</span>
+          <h3>Steaks cut to order</h3>
+          <p>Rump, porterhouse, fillet and T-bone cut to the thickness you want, plus roasts, mince, schnitzel and casserole cuts.</p>
         </div>
-      </div>
-
-      <div class="rotator" id="rotator">
-        <span class="qm" aria-hidden="true">&ldquo;</span>
-        <div class="rot-item on">
-          <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
-          <p>Dropped a beast off and got it back cut exactly how we asked, labelled by cut, ready for the freezer. The jalapeno and cheese sausages did not last the week.</p>
-          <div class="who">Tania Reweti, Ohoka</div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-sausages.jpg" alt="Butcher's board of sausages, patties and steak cuts" loading="lazy" width="900" height="600"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M4 15h16"/><path d="M8 19h8"/></svg>Sausages</span>
+          <h3>NZ champion sausages</h3>
+          <p>Gold medal winners at the 2024 Great NZ Sausage Competition. Try the jalapeno, smoked cheese and ham, or the herb and garlic.</p>
         </div>
-        <div class="rot-item">
-          <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
-          <p>Coeliac in the family, so a butcher who makes gluten free sausages properly is worth the drive from Rangiora. Staff know their stuff and tell you straight.</p>
-          <div class="who">Michael Prendergast, Rangiora</div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-smallgoods.jpg" alt="Cured smallgoods sliced on a slate board" loading="lazy" width="900" height="600"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>Smallgoods</span>
+          <h3>Bacon, ham &amp; smallgoods</h3>
+          <p>House bacon in 450g and 1kg packs, hams, salamis and the smallgoods cabinet that keeps winning medals.</p>
         </div>
-        <div class="rot-item">
-          <div class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
-          <p>Order the raffle trays for the club every second Friday. Always ready on time, always packed well, and the boys reckon they are the best trays going.</p>
-          <div class="who">Dave Sinclair, Kaiapoi Rugby Club</div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-homekill.jpg" alt="Large raw ribeye on a wooden butcher's board" loading="lazy" width="900" height="1200"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l9-9"/><path d="M12.2 6.2L19 13l2-2-6.8-6.8a2.8 2.8 0 0 0-4 4z"/><path d="M6 18l-3 3"/></svg>Home Kill</span>
+          <h3>Home kill processing</h3>
+          <p>Your animal, hung and broken down the way you ask. Tell us your cuts, sausage flavours and pack sizes and we do the rest.</p>
         </div>
-        <div class="rot-dots" id="rotDots" role="tablist" aria-label="Cycle reviews"></div>
-      </div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-packs.jpg" alt="Grilled steaks with shallots on a cast iron pan" loading="lazy" width="900" height="1350"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>Packs</span>
+          <h3>Meat packs &amp; raffle trays</h3>
+          <p>Freezer packs from $39, BBQ packs for the weekend and raffle trays made up for clubs and fundraisers.</p>
+        </div>
+      </article>
+      <article class="svc-card reveal">
+        <div class="svc-img"><img src="img/card-schnitzel.jpg" alt="Crumbed schnitzel in a pan with grilled lemon" loading="lazy" width="900" height="1600"></div>
+        <div class="svc-body">
+          <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 1 7 7c0 3-2 5-2 8h-10c0-3-2-5-2-8a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg>Chicken &amp; More</span>
+          <h3>Chicken &amp; gluten-free</h3>
+          <p>Chicken schnitzels, cordon bleu and breast fillets, with a proper gluten-free range across the cabinet.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- AWARDS -->
-<section class="section awards" id="awards">
-  <div class="wrap awards-grid">
-    <div class="reveal">
-      <h2>Judged the best sausage in the country</h2>
-      <p class="lead" style="margin-top:18px">Fred Hicklin put a jalapeno, smoked cheese and ham sausage into the 2024 Dunninghams Great New Zealand Sausage Competition. It came home gold, and supreme champion of its class. It was only the second year the shop had entered.</p>
-      <p class="lead">The recipe is still made here on Williams Street, in the same room as everything else in the cabinet.</p>
-      <ul class="award-list">
-        <li>
-          <div class="award-yr">2024</div>
-          <div>
-            <div class="award-b">Gold and Supreme Champion <span class="medal">/ gourmet varietal</span></div>
-            <div class="award-c">Jalapeno, smoked cheese and ham. Great New Zealand Sausage Competition.</div>
-          </div>
-        </li>
-        <li>
-          <div class="award-yr">2024</div>
-          <div>
-            <div class="award-b">Bronze <span class="medal">/ flavours of the world</span></div>
-            <div class="award-c">Mushroom and seaweed Korean pork. Great New Zealand Sausage Competition.</div>
-          </div>
-        </li>
-        <li>
-          <div class="award-yr">2023</div>
-          <div>
-            <div class="award-b">Silver <span class="medal">/ dry cured bacon</span></div>
-            <div class="award-c">100% New Zealand Bacon and Ham Awards, Retail Meat New Zealand.</div>
-          </div>
-        </li>
+<section class="packs" id="packs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2 style="color:#fff">Get the freezer sorted</h2>
+      <p>Made-up packs at counter prices. Grab one off the shelf or ring ahead and we will have it boxed and waiting.</p>
+    </div>
+    <div class="packs-grid">
+      <div class="pack-photo reveal"><img src="img/packs-side.jpg" alt="BBQ pork ribs on a serving board with sides" loading="lazy" width="900" height="601"></div>
+      <article class="pack-card reveal">
+        <h3>Value Pack</h3>
+        <div class="pack-price">$39</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g beef mince</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g sausages</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g frying steak</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>480g patties</li>
+        </ul>
+      </article>
+      <article class="pack-card reveal">
+        <h3>BBQ Pack</h3>
+        <div class="pack-price">$55</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>650g BBQ steak</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>650g lamb chops</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>800g BBQ sausages</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>480g patties</li>
+        </ul>
+      </article>
+      <article class="pack-card reveal">
+        <h3>Midweek Pack</h3>
+        <div class="pack-price">$74</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>3x filled chicken breast</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>700g beef mince</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>700g sausages</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g pork strips</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>800g beef patties</li>
+        </ul>
+      </article>
+      <article class="pack-card reveal">
+        <h3>Family Pack</h3>
+        <div class="pack-price">$119</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg sausages</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg beef mince</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg lamb chops</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg rump steak</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1.5kg roast + family pie</li>
+        </ul>
+      </article>
+    </div>
+    <p class="packs-note">Pack contents rotate with what is in the cabinet. Ring the shop for today's line-up or to put together a custom order.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <img src="img/about.jpg" alt="A roast being carved on a wooden board" loading="lazy" width="900" height="600">
+      <span class="about-tag">Williams St, Kaiapoi</span>
+    </div>
+    <div class="about-copy reveal">
+      <h2>A name Kaiapoi knows</h2>
+      <p>Cattermoles is the butcher shop on Williams Street where the meat is cut on site and the person serving you knows exactly where it came from. Owner Fred Hicklin and the team make everything in-house, from the daily cabinet through to the smallgoods.</p>
+      <p>The sausages speak for themselves. At the 2024 Great NZ Sausage Competition, up against more than 800 entries, the shop's jalapeno, smoked cheese and ham sausage took the gold medal in its class, backing up a silver the year before.</p>
+      <ul class="about-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14.5L7.5 21l4.5-2.5L16.5 21 15 14.5"/></svg>Gold medallist, 2024 Great NZ Sausage Competition</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l9-9"/><path d="M12.2 6.2L19 13l2-2-6.8-6.8a2.8 2.8 0 0 0-4 4z"/><path d="M6 18l-3 3"/></svg>Home kill specialists for North Canterbury blocks</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Gluten-free options right across the range</li>
       </ul>
     </div>
-    <div class="awards-img reveal d1">
-      <img src="images/sausages-hanging.jpg" alt="Strings of fresh sausages hanging in the Cattermoles Butchery smokehouse" loading="lazy" width="996" height="1578">
-      <div class="cap">Sausages made in store, Williams Street, Kaiapoi</div>
-    </div>
   </div>
 </section>
 
-<!-- HOMEKILL -->
-<section class="section homekill" id="homekill">
-  <div class="homekill-bg">
-    <img src="images/mince-packs.jpg" alt="" loading="lazy" aria-hidden="true">
-  </div>
+<section class="crew">
   <div class="wrap">
-    <div class="reveal">
-      <h2>Your homekill, done properly</h2>
-      <p class="lead">Beef, sheep, pig or deer. We handle it from the paddock to the packs in your freezer, and you tell us exactly how you want it cut.</p>
+    <div class="sec-head reveal">
+      <h2>The team behind the counter</h2>
+      <p>The crew that cuts, cures and smokes it all, and took home the medals to prove it.</p>
     </div>
-    <div class="steps">
-      <div class="step reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg></div>
-        <h3>Book the date</h3>
-        <p>Ring the shop and we lock in a day that suits you and the stock.</p>
-      </div>
-      <div class="step reveal d1">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17h20M4 17V9.5l6-4 6 4V17M9 17v-4h3v4"/><path d="M17.5 17V11l3 1.6V17"/></svg></div>
-        <h3>We come to you</h3>
-        <p>On farm, on your lifestyle block, handled quietly and cleanly.</p>
-      </div>
-      <div class="step reveal d2">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.9V5.2a2 2 0 1 0-4 0v9.7a4 4 0 1 0 4 0z"/><path d="M17.5 7h3M17.5 11h3"/></svg></div>
-        <h3>Hung and aged</h3>
-        <p>Chilled in our coolstore and given the time it needs to eat well.</p>
-      </div>
-      <div class="step reveal d3">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5 12 4l9 4.5v7L12 20l-9-4.5z"/><path d="m3 8.5 9 4.5 9-4.5M12 13v7"/></svg></div>
-        <h3>Cut to your list</h3>
-        <p>Steaks, roasts, mince, sausages and bacon, labelled and packed.</p>
-      </div>
-    </div>
-    <div class="homekill-cta">
-      <a class="btn btn-primary" href="tel:+6433278219">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2z"/></svg>
-        Call 03 327 8219
-      </a>
-      <a class="btn btn-ghost" href="#contact">Get the shop details</a>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services">
-  <div class="wrap">
-    <div class="sechead reveal">
-      <div class="txt">
-        <h2>What comes out of this shop</h2>
-        <p class="lead">Everything is cut, cured, smoked and filled here on Williams Street. Nothing arrives pre packed from somewhere else.</p>
-      </div>
-      <a class="gbadge gbadge-light gbadge-sm" href="#reviews" aria-label="Rated 4.4 out of 5 from 42 Google reviews, read them below">
-        <svg class="gmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg>
-        <span><b>4.4</b></span>
-        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
-        <small>42 reviews</small>
-      </a>
-    </div>
-
-    <div class="cards">
-      <article class="card reveal">
-        <div class="card-img"><img src="images/mince-packs.jpg" alt="Labelled packs of mince from a homekill beast, ready for the freezer" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 17h20M4 17V9.5l6-4 6 4V17"/></svg>On the farm</div>
-          <h3>Homekill and wild game</h3>
-          <p>Beef, sheep, pig and deer, killed on your place and processed here. Tell us the cut list and it comes back labelled, boxed and ready for the freezer.</p>
-        </div>
+    <div class="crew-grid">
+      <article class="crew-card reveal">
+        <div class="crew-avatar">FH</div>
+        <h3>Fred Hicklin</h3>
+        <p class="crew-role">Owner</p>
       </article>
-
-      <article class="card reveal d1">
-        <div class="card-img"><img src="images/sausages-hanging.jpg" alt="Fresh sausages hanging in strings at Cattermoles Butchery" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>Made in store</div>
-          <h3>Award winning sausages</h3>
-          <p>Pure beef and pork through to jalapeno with smoked cheese and ham, the one that took supreme champion in 2024. Filled fresh, never bought in.</p>
-        </div>
+      <article class="crew-card reveal">
+        <div class="crew-avatar">RB</div>
+        <h3>Rhys Bennett</h3>
+        <p class="crew-role">Butcher</p>
       </article>
-
-      <article class="card reveal d2">
-        <div class="card-img"><img src="images/seasoned-pork.jpg" alt="Seasoned pork belly and peppered cuts on a tray in the butchery" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c1.6 3 4.6 4.6 4.6 8.6a4.6 4.6 0 1 1-9.2 0c0-1.6.6-2.8 1.4-3.7.3 1 .9 1.7 1.6 2C10 7.2 10.7 4.6 12 2.5z"/></svg>Cured and smoked</div>
-          <h3>Bacon, ham and smallgoods</h3>
-          <p>Dry cured bacon that took silver at the national awards, leg hams on the bone, and a smallgoods range built for the way people around here actually eat.</p>
-        </div>
+      <article class="crew-card reveal">
+        <div class="crew-avatar">LV</div>
+        <h3>Luke Vos</h3>
+        <p class="crew-role">Butcher</p>
       </article>
-
-      <article class="card reveal">
-        <div class="card-img"><img src="images/case-schnitzel.jpg" alt="Crumbed schnitzel and sausages in the Cattermoles display cabinet" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9.5"/></svg>Gluten free</div>
-          <h3>Gluten free range</h3>
-          <p>Sausages, patties and smallgoods made gluten free, on the sign out front for a reason. Ask at the counter and staff will tell you exactly what is in them.</p>
-        </div>
-      </article>
-
-      <article class="card reveal d1">
-        <div class="card-img"><img src="images/trays-sausages.jpg" alt="Trays of sausages packed up for a club raffle" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.2a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1.3a1.8 1.8 0 0 0 0 3.4v1.4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1.4a1.8 1.8 0 0 0 0-3.4z"/><path d="M14 7.6v1.9M14 11.2v1.9M14 14.8v1.9"/></svg>For the club</div>
-          <h3>Raffle trays and platters</h3>
-          <p>Standing orders for rugby clubs, workplaces and fundraisers across Waimakariri. Give us the day and the number of trays and they will be waiting.</p>
-        </div>
-      </article>
-
-      <article class="card reveal d2">
-        <div class="card-img"><img src="images/bacon-skewers.jpg" alt="Bacon wrapped skewers seasoned and ready for the barbecue" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10.5" r="6.4"/><path d="M6.2 13.4h11.6M8.6 16.6 7.2 21M15.4 16.6 16.8 21"/></svg>Ready for the grill</div>
-          <h3>Barbecue packs and skewers</h3>
-          <p>Marinated kebabs, bacon wrapped skewers, patties and seasoned steaks. Walk in on a Friday and walk out with Saturday sorted.</p>
-        </div>
+      <article class="crew-card reveal">
+        <div class="crew-avatar">KK</div>
+        <h3>Keri Kelly</h3>
+        <p class="crew-role">Butcher</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- CABINET -->
-<section class="section cabinet" id="cabinet">
+<section class="reviews" id="reviews">
   <div class="wrap">
-    <div class="sechead reveal">
-      <div class="txt">
-        <h2>In the cabinet this week</h2>
-        <p class="lead">The counter changes with the season and with what the local farms are sending in. Here is what it usually looks like.</p>
-      </div>
-      <a class="gbadge gbadge-light gbadge-sm" href="#reviews" aria-label="Rated 4.4 out of 5 from 42 Google reviews, read them below">
-        <svg class="gmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg>
-        <span><b>4.4</b></span>
-        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
-        <small>42 reviews</small>
-      </a>
+    <div class="sec-head reveal">
+      <span class="rev-badge">Example reviews. Your real Google reviews plug in here.</span>
+      <h2>What locals say</h2>
     </div>
-
-    <div class="strip">
-      <figure class="tall reveal">
-        <img src="images/case-steaks.jpg" alt="Steaks, marinated cuts and mince laid out in the Cattermoles display case" loading="lazy">
-        <figcaption>Steaks and marinated cuts, cut fresh each morning</figcaption>
-      </figure>
-      <figure class="reveal d1">
-        <img src="images/lamb-chops.jpg" alt="Lamb shoulder and loin chops on a stainless tray" loading="lazy">
-        <figcaption>Canterbury lamb chops</figcaption>
-      </figure>
-      <figure class="reveal d2">
-        <img src="images/beef-kebabs.jpg" alt="Marinated beef kebabs on wooden skewers" loading="lazy">
-        <figcaption>Marinated beef kebabs</figcaption>
-      </figure>
-      <figure class="reveal d1">
-        <img src="images/case-sausages.jpg" alt="Rows of fresh sausages and mince in the butchery cabinet" loading="lazy">
-        <figcaption>Sausages filled in store</figcaption>
-      </figure>
-      <figure class="reveal d2">
-        <img src="images/steak-grill.jpg" alt="A seasoned steak searing on a hot grill plate" loading="lazy">
-        <figcaption>Seasoned and ready for the plate</figcaption>
-      </figure>
+    <div class="rev-grid">
+      <article class="rev-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p>Best sausages in North Canterbury, no contest. The jalapeno and cheese ones never make it to the freezer.</p>
+        <div class="rev-name">Mike T <span>Kaiapoi</span></div>
+      </article>
+      <article class="rev-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p>They processed our home kill beast exactly to the cutting list. Everything labelled, packed hard and frozen. Could not fault it.</p>
+        <div class="rev-name">Sharon W <span>Ohoka</span></div>
+      </article>
+      <article class="rev-card reveal">
+        <div class="stars" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p>Proper old-school service. Asked for thick-cut porterhouse and got it cut in front of me, plus advice on how to cook it.</p>
+        <div class="rev-name">Dave M <span>Woodend</span></div>
+      </article>
+    </div>
+    <div class="rev-actions reveal">
+      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Cattermoles+Butchery+159+Williams+Street+Kaiapoi" target="_blank" rel="noopener">See all our Google reviews</a>
     </div>
   </div>
 </section>
 
-<!-- REVIEWS -->
-<section class="section reviews" id="reviews">
+<section class="rev-banner">
   <div class="wrap">
-    <div class="sechead reveal">
-      <div class="txt">
-        <h2>What people say</h2>
-        <p class="lead">Rated 4.4 out of 5 across 42 Google reviews from customers around Kaiapoi, Woodend, Ohoka and Rangiora.</p>
-      </div>
-      <a class="gbadge gbadge-light gbadge-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Cattermoles%20Butchery%20159%20Williams%20Street%20Kaiapoi" target="_blank" rel="noopener" aria-label="Rated 4.4 out of 5 from 42 Google reviews, open them on Google">
-        <svg class="gmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg>
-        <span><b>4.4</b></span>
-        <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
-        <small>42 reviews</small>
-      </a>
+    <div>
+      <h2>Happy with your order?</h2>
+      <p>A quick Google review helps other locals find the shop. It takes about a minute.</p>
     </div>
-
-    <div class="rev-boxes">
-      <article class="rev reveal">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Dropped a beast off and got it back cut exactly how we asked, labelled by cut and ready for the freezer. The jalapeno and cheese sausages did not last the week.</p>
-        <div class="who"><span class="av" aria-hidden="true">TR</span><span class="who-txt"><b>Tania Reweti</b><span>Ohoka</span></span></div>
-      </article>
-      <article class="rev reveal d1">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Coeliac in the family, so a butcher who makes gluten free sausages properly is worth the drive. Staff know their stuff and tell you straight.</p>
-        <div class="who"><span class="av" aria-hidden="true">MP</span><span class="who-txt"><b>Michael Prendergast</b><span>Rangiora</span></span></div>
-      </article>
-      <article class="rev reveal d2">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Order the raffle trays for the club every second Friday. Always ready on time, always packed well, and the boys reckon they are the best going.</p>
-        <div class="who"><span class="av" aria-hidden="true">DS</span><span class="who-txt"><b>Dave Sinclair</b><span>Kaiapoi Rugby Club</span></span></div>
-      </article>
-      <article class="rev reveal">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Been getting our bacon here for years. You can taste the difference against the wet stuff from the supermarket. The leg ham at Christmas is superb.</p>
-        <div class="who"><span class="av" aria-hidden="true">JM</span><span class="who-txt"><b>Janine Mowat</b><span>Woodend</span></span></div>
-      </article>
-      <article class="rev reveal d1">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Rang on the Tuesday for a homekill and they were out on the Thursday. Cut list followed to the letter and nothing came back wrapped badly.</p>
-        <div class="who"><span class="av" aria-hidden="true">HW</span><span class="who-txt"><b>Hemi Waaka</b><span>Sefton</span></span></div>
-      </article>
-      <article class="rev reveal d2">
-        <div class="rev-head"><span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span><svg class="gsrc" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.2-2.2H12v4.1h6.6c-.1 1.1-.9 2.8-2.5 3.9l-.1.2 3.6 2.8.3.1c2.3-2.2 3.6-5.3 3.6-8.9"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1 .7-2.4 1.2-4.2 1.2-3.2 0-5.9-2.1-6.9-5l-.2.1-3.7 2.9-.1.2C3.1 21.3 7.2 24 12 24"/><path fill="#FBBC05" d="M5.1 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V9.5L1.3 6.6l-.1.1C.4 8.2 0 10.1 0 12s.4 3.8 1.2 5.3z"/><path fill="#EA4335" d="M12 4.7c2.3 0 3.8 1 4.7 1.8l3.4-3.3C18 1.2 15.2 0 12 0 7.2 0 3.1 2.7 1.2 6.7l3.9 3c1-2.9 3.7-5 6.9-5"/></svg></div>
-        <p>Good value for the quality you get. Someone behind the counter always throws in a tip on how to cook whatever you have picked.</p>
-        <div class="who"><span class="av" aria-hidden="true">RA</span><span class="who-txt"><b>Robyn Aitken</b><span>Kaiapoi</span></span></div>
-      </article>
-    </div>
-
-    <div class="rev-more reveal">
-      <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Cattermoles%20Butchery%20159%20Williams%20Street%20Kaiapoi" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
-        Read them on Google
-      </a>
-    </div>
+    <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&query=Cattermoles+Butchery+159+Williams+Street+Kaiapoi" target="_blank" rel="noopener">Leave us a review</a>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
+<section class="contact" id="contact">
   <div class="wrap">
-    <div class="cbox reveal">
-      <div class="cmap">
-        <iframe title="Map showing Cattermoles Butchery at 159 Williams Street, Kaiapoi" src="https://www.google.com/maps?q=159+Williams+Street,+Kaiapoi+7630,+New+Zealand&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contact-card reveal">
+      <div class="contact-map">
+        <iframe title="Map showing Cattermoles Butchery at 159 Williams Street, Kaiapoi" src="https://www.google.com/maps?q=Cattermoles%20Butchery%2C%20159%20Williams%20Street%2C%20Kaiapoi%2C%20New%20Zealand&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
-      <div class="cinfo">
-        <h2>Come see us in Kaiapoi</h2>
-        <p class="lead">Williams Street, opposite the shops. Ring ahead for homekill bookings, bulk orders and raffle trays.</p>
-        <div class="cbtns">
-          <a class="btn btn-primary btn-wide" href="tel:+6433278219">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2z"/></svg>
-            Call 03 327 8219
+      <div class="contact-info">
+        <h2>Come see us</h2>
+        <div class="contact-btns">
+          <a class="btn btn-red" href="tel:+0278837805">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Cattermoles Butchery
           </a>
-          <button class="btn btn-ghost btn-wide" type="button" id="emailBtn" data-user="cattermolesbutchery" data-domain="gmail.com">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6.5 9-6.5"/></svg>
-            Email the shop
-          </button>
+          <a class="btn btn-ghost" data-gmail data-user="rhysjnb" data-domain="gmail.com" data-su="Order%20enquiry" href="#contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+            Email Cattermoles Butchery
+          </a>
         </div>
-        <div class="cdetails">
-          <div class="cd">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2z"/></svg></div>
-            <div><div class="k">Phone</div><div class="v"><a href="tel:+6433278219">03 327 8219</a></div></div>
-          </div>
-          <div class="cd">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6.5 9 6.5 9-6.5"/></svg></div>
-            <div><div class="k">Email</div><div class="v"><a href="#contact" id="emailLink">Tap to open your email</a></div></div>
-          </div>
-          <div class="cd">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.5-8 12-8 12s-8-6.5-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10.3" r="2.9"/></svg></div>
-            <div><div class="k">Find us</div><div class="v">159 Williams Street<span>Kaiapoi 7630, North Canterbury</span></div></div>
-          </div>
-          <div class="cd">
-            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.8V12l3.4 2"/></svg></div>
-            <div><div class="k">Open</div><div class="v">Monday to Saturday<span>Closed Sunday</span></div></div>
-          </div>
+        <div class="c-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>159 Williams Street</strong><br>Kaiapoi 7630, North Canterbury</div>
+        </div>
+        <div class="c-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div><strong>Shop counter:</strong> <a href="tel:+6433278219">03 327 8219</a><br><strong>Mobile:</strong> <a href="tel:+0278837805">027 883 7805</a></div>
+        </div>
+        <div class="c-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+          <div><strong>Email:</strong> <a data-gmail data-user="rhysjnb" data-domain="gmail.com" data-show href="#contact">email the shop</a></div>
+        </div>
+        <div class="c-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div class="hours"><strong>Hours</strong><span>Mon to Fri: 6:30am to 6:00pm</span><span>Sat: 6:30am to 12:30pm</span><span>Sun: Closed</span></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.facebook.com/Cattermoles.Butchery.Kaiapoi" target="_blank" rel="noopener" aria-label="Cattermoles Butchery on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.026 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/explore/search/keyword/?q=cattermoles%20butchery" target="_blank" rel="noopener" aria-label="Find Cattermoles Butchery on Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="foot">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Cattermoles Butchery, back to top">
-      <img class="brand-mark" src="images/logo.png" alt="Cattermoles Butchery" width="760" height="570">
-    </a>
-    <div class="meta">
-      159 Williams Street, Kaiapoi 7630<br>
-      <a href="tel:+6433278219">03 327 8219</a> &nbsp;/&nbsp; Your homekill specialists<br>
-      &copy; <span id="yr">2026</span> Cattermoles Butchery
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <img src="img/logo.png" alt="Cattermoles Butchery logo" width="52" height="52">
+      <div>Cattermoles Butchery<small>159 Williams Street, Kaiapoi</small></div>
     </div>
+    <ul class="foot-links">
+      <li><a href="#meat">Behind the glass</a></li>
+      <li><a href="#packs">Meat packs</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+    <div class="socials">
+      <a href="https://www.facebook.com/Cattermoles.Butchery.Kaiapoi" target="_blank" rel="noopener" aria-label="Cattermoles Butchery on Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.026 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.971H15.83c-1.491 0-1.956.93-1.956 1.886v2.264h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/explore/search/keyword/?q=cattermoles%20butchery" target="_blank" rel="noopener" aria-label="Find Cattermoles Butchery on Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>&copy; 2026 Cattermoles Butchery. All rights reserved.</span>
+    <span>Butcher &amp; Home Kill, Kaiapoi, North Canterbury</span>
   </div>
 </footer>
 
 <script>
 (function(){
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* sticky nav */
-  var nav = document.getElementById('nav');
-  var sentinel = document.createElement('div');
-  sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:60px;pointer-events:none';
-  document.body.prepend(sentinel);
-  new IntersectionObserver(function(e){
-    nav.classList.toggle('stuck', !e[0].isIntersecting);
-  }, {threshold:0}).observe(sentinel);
+  // intro overlay
+  var intro = document.getElementById('intro');
+  if (intro) {
+    window.addEventListener('load', function(){ setTimeout(function(){ intro.classList.add('done'); }, 900); });
+    setTimeout(function(){ intro.classList.add('done'); }, 2600);
+  }
 
-  /* scroll reveals */
+  // mobile nav
+  var toggle = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // hero rotation
+  var slides = document.querySelectorAll('.hero-slide');
+  if (!reduced && slides.length > 1) {
+    var cur = 0;
+    setInterval(function(){
+      slides[cur].classList.remove('active');
+      cur = (cur + 1) % slides.length;
+      slides[cur].classList.add('active');
+    }, 6000);
+  }
+
+  // hero review quote rotation (same data as review cards)
+  var quotes = [
+    {t:'Best sausages in North Canterbury, no contest. The jalapeno and cheese ones never make it to the freezer.', n:'Mike T, Kaiapoi'},
+    {t:'They processed our home kill beast exactly to the cutting list. Everything labelled, packed hard and frozen.', n:'Sharon W, Ohoka'},
+    {t:'Proper old-school service. Asked for thick-cut porterhouse and got it cut in front of me.', n:'Dave M, Woodend'}
+  ];
+  var qEl = document.getElementById('heroQuote');
+  var box = document.getElementById('heroReview');
+  if (!reduced && qEl) {
+    var qi = 0;
+    setInterval(function(){
+      box.classList.add('fading');
+      setTimeout(function(){
+        qi = (qi + 1) % quotes.length;
+        qEl.innerHTML = '';
+        qEl.appendChild(document.createTextNode(quotes[qi].t));
+        var s = document.createElement('span');
+        s.className = 'hr-name';
+        s.textContent = quotes[qi].n;
+        qEl.appendChild(s);
+        box.classList.remove('fading');
+      }, 500);
+    }, 6500);
+  }
+
+  // scroll reveals
   var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     });
-  }, {threshold:0.14, rootMargin:'0px 0px -8% 0px'});
+  }, {threshold: 0.12});
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 
-  /* hero review rotator */
-  var rot = document.getElementById('rotator');
-  if(rot){
-    var items = rot.querySelectorAll('.rot-item');
-    var dots = document.getElementById('rotDots');
-    var i = 0, timer = null;
-    items.forEach(function(_, n){
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.setAttribute('role','tab');
-      b.setAttribute('aria-label', 'Show review ' + (n+1));
-      b.setAttribute('aria-current', n === 0 ? 'true' : 'false');
-      b.addEventListener('click', function(){ show(n); restart(); });
-      dots.appendChild(b);
-    });
-    function show(n){
-      i = n;
-      items.forEach(function(el, k){ el.classList.toggle('on', k === n); });
-      dots.querySelectorAll('button').forEach(function(b, k){ b.setAttribute('aria-current', k === n ? 'true' : 'false'); });
-    }
-    function next(){ show((i + 1) % items.length); }
-    function restart(){ if(timer) clearInterval(timer); if(!reduce) timer = setInterval(next, 5600); }
-    restart();
-    rot.addEventListener('mouseenter', function(){ if(timer) clearInterval(timer); });
-    rot.addEventListener('mouseleave', restart);
-  }
-
-  /* loading screen: fades on load, with a failsafe so it can never trap the page */
-  var loader = document.getElementById('loader');
-  if(loader){
-    document.documentElement.classList.add('loading');
-    var hidden = false;
-    var hide = function(){
-      if(hidden) return;
-      hidden = true;
-      loader.classList.add('done');
-      document.documentElement.classList.remove('loading');
-    };
-    var settle = function(){ setTimeout(hide, reduce ? 0 : 480); };
-    if(document.readyState === 'complete') settle();
-    else window.addEventListener('load', settle);
-    setTimeout(hide, 4000);
-  }
-
-  /* email built in JS so it never sits in the markup */
-  var btn = document.getElementById('emailBtn');
-  if(btn){
-    var addr = btn.dataset.user + String.fromCharCode(64) + btn.dataset.domain;
-    var subject = encodeURIComponent('Enquiry from the Cattermoles Butchery website');
-    var open = function(){
-      window.open('https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(addr) + '&su=' + subject, '_blank', 'noopener');
-    };
-    btn.addEventListener('click', open);
-    var link = document.getElementById('emailLink');
-    if(link){
-      link.textContent = addr;
-      link.addEventListener('click', function(e){ e.preventDefault(); open(); });
-    }
-  }
-
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  // gmail compose links (address assembled in JS only)
+  document.querySelectorAll('a[data-gmail]').forEach(function(a){
+    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
+    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su') || '') + '&body=' + (a.getAttribute('data-body') || '');
+    a.target = '_blank';
+    a.rel = 'noopener';
+    if (a.hasAttribute('data-show')) { a.textContent = to; }
+  });
 })();
 </script>
 </body>
