@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" imagesrcset="images/hero-counter-m.webp 840w, images/hero-counter-lg.webp 1400w, images/hero-counter.jpg 1800w" imagesizes="100vw" fetchpriority="high">
 <style>
 :root{
   --ink:#081027;
@@ -209,6 +210,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
 .foot-links a{font-size:.9rem;color:var(--muted-light);transition:color .25s}
 .foot-links a:hover{color:#fff}
 .foot-bottom{max-width:1120px;margin:30px auto 0;padding-top:20px;border-top:1px solid var(--line-dark);font-size:.82rem;color:#6b7ca3;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+@media (max-width:640px){section{padding:60px 18px}.sec-head{margin-bottom:34px}}
 @media (max-width:600px){.nav-brand span{display:none}}
 </style>
 </head>
@@ -248,7 +250,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
 
 <header class="hero" id="top">
   <div class="hero-slides" id="heroSlides">
-    <div class="hero-slide active"><img src="images/hero-counter.jpg" alt="The Cattermoles display cabinet loaded with trays of steak, mince and sausages" fetchpriority="high" width="1800" height="1800"></div>
+    <div class="hero-slide active"><img src="images/hero-counter.jpg" srcset="images/hero-counter-m.webp 840w, images/hero-counter-lg.webp 1400w, images/hero-counter.jpg 1800w" sizes="100vw" alt="The Cattermoles display cabinet loaded with trays of steak, mince and sausages" fetchpriority="high" width="1800" height="1800"></div>
   </div>
   <div class="hero-scrim"></div>
   <div class="hero-inner">
@@ -283,7 +285,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
     </div>
     <div class="svc-grid">
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/case-steaks.jpg" alt="Trays of steaks and cuts labelled in the display cabinet" loading="lazy" width="1200" height="846"></div>
+        <div class="svc-img"><img src="images/case-steaks.jpg" srcset="images/case-steaks-m.webp 840w, images/case-steaks.jpg 1200w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="Trays of steaks and cuts labelled in the display cabinet" loading="lazy" width="1200" height="846"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>Beef &amp; Lamb</span>
           <h3>Steaks cut to order</h3>
@@ -291,7 +293,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/trays-sausages.jpg" alt="Trays of handmade sausages in the cabinet" loading="lazy" width="1200" height="900"></div>
+        <div class="svc-img"><img src="images/trays-sausages.jpg" srcset="images/trays-sausages-m.webp 840w, images/trays-sausages.jpg 1200w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="Trays of handmade sausages in the cabinet" loading="lazy" width="1200" height="900"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c0-4.4 3.6-8 8-8s8 3.6 8 8"/><path d="M4 15h16"/><path d="M8 19h8"/></svg>Sausages</span>
           <h3>NZ champion sausages</h3>
@@ -299,7 +301,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/bacon-skewers.jpg" alt="Bacon-wrapped skewers seasoned and ready for the grill" loading="lazy" width="1086" height="1448"></div>
+        <div class="svc-img"><img src="images/bacon-skewers.jpg" srcset="images/bacon-skewers-m.webp 840w, images/bacon-skewers.jpg 1086w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="Bacon-wrapped skewers seasoned and ready for the grill" loading="lazy" width="1086" height="1448"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>Smallgoods</span>
           <h3>Bacon, ham &amp; smallgoods</h3>
@@ -307,7 +309,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/sausages-hanging.jpg" alt="Fresh sausages hanging in links after processing" loading="lazy" width="996" height="1578"></div>
+        <div class="svc-img"><img src="images/sausages-hanging.jpg" srcset="images/sausages-hanging-m.webp 840w, images/sausages-hanging.jpg 996w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="Fresh sausages hanging in links after processing" loading="lazy" width="996" height="1578"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l9-9"/><path d="M12.2 6.2L19 13l2-2-6.8-6.8a2.8 2.8 0 0 0-4 4z"/><path d="M6 18l-3 3"/></svg>Home Kill</span>
           <h3>Home kill processing</h3>
@@ -315,7 +317,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/lamb-chops.jpg" alt="A tray of chops cut and ready for the cabinet" loading="lazy" width="1200" height="900"></div>
+        <div class="svc-img"><img src="images/lamb-chops.jpg" srcset="images/lamb-chops-m.webp 840w, images/lamb-chops.jpg 1200w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="A tray of chops cut and ready for the cabinet" loading="lazy" width="1200" height="900"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg>Packs</span>
           <h3>Meat packs &amp; raffle trays</h3>
@@ -323,7 +325,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
         </div>
       </article>
       <article class="svc-card reveal">
-        <div class="svc-img"><img src="images/case-schnitzel.jpg" alt="Crumbed schnitzel and gluten-free lines in the cabinet" loading="lazy" width="1200" height="900"></div>
+        <div class="svc-img"><img src="images/case-schnitzel.jpg" srcset="images/case-schnitzel-m.webp 840w, images/case-schnitzel.jpg 1200w" sizes="(min-width:920px) 33vw, (min-width:640px) 50vw, 100vw" alt="Crumbed schnitzel and gluten-free lines in the cabinet" loading="lazy" width="1200" height="900"></div>
         <div class="svc-body">
           <span class="svc-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a7 7 0 0 1 7 7c0 3-2 5-2 8h-10c0-3-2-5-2-8a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg>Chicken &amp; More</span>
           <h3>Chicken &amp; gluten-free</h3>
@@ -338,7 +340,7 @@ footer{background:#060b1c;border-top:1px solid var(--line-dark);padding:48px 22p
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-photo reveal">
-      <img src="images/shopfront-sign.jpg" alt="The Cattermoles Butchery shopfront sign on Williams Street" loading="lazy" width="1200" height="675">
+      <img src="images/shopfront-sign.jpg" srcset="images/shopfront-sign-m.webp 840w, images/shopfront-sign.jpg 1200w" sizes="(min-width:880px) 50vw, 100vw" alt="The Cattermoles Butchery shopfront sign on Williams Street" loading="lazy" width="1200" height="675">
       <span class="about-tag">Williams St, Kaiapoi</span>
     </div>
     <div class="about-copy reveal">
