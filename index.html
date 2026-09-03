@@ -125,28 +125,12 @@ section{padding:92px 22px}
 @media (max-width:920px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:640px){.svc-grid{grid-template-columns:1fr}}
 
-/* packs */
-.packs{background:var(--ink-2)}
-.packs .sec-head p{color:var(--muted-light)}
-.packs-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:auto;gap:20px}
-.pack-photo{grid-column:span 2;border-radius:var(--radius);overflow:hidden;min-height:230px;position:relative}
-.pack-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
-.pack-card{background:var(--ink-3);border:1px solid var(--line-dark);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;transition:border-color .3s,transform .3s}
-.pack-card:hover{border-color:rgba(14,82,216,.6);transform:translateY(-4px)}
-.pack-card h3{font-size:1.3rem;font-weight:700;color:#fff}
-.pack-price{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--blue-text);margin:6px 0 14px;line-height:1}
-.pack-card ul{list-style:none;font-size:.9rem;color:var(--muted-light);display:flex;flex-direction:column;gap:6px}
-.pack-card li{display:flex;gap:9px;align-items:flex-start}
-.pack-card li svg{width:13px;height:13px;color:var(--blue-text);flex-shrink:0;margin-top:5px}
-.packs-note{margin-top:26px;font-size:.88rem;color:var(--muted-light);max-width:62ch}
-@media (max-width:920px){.packs-grid{grid-template-columns:repeat(2,1fr)}.pack-photo{grid-column:span 2;min-height:200px}}
-@media (max-width:640px){.packs-grid{grid-template-columns:1fr}.pack-photo{grid-column:span 1}}
 
 /* about */
 .about{background:var(--bone);color:var(--text-dark)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .about-photo{position:relative}
-.about-photo img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
+.about-photo img{display:block;width:100%;height:auto;border-radius:var(--radius);filter:saturate(.85) contrast(1.05)}
 .about-tag{position:absolute;left:-1px;bottom:-1px;background:var(--blue);color:#fff;font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.95rem;padding:10px 18px;border-radius:0 var(--radius) 0 var(--radius)}
 .about-copy h2{font-size:clamp(2rem,4.4vw,2.9rem);font-weight:800;color:var(--ink);margin-bottom:18px}
 .about-copy p{margin-bottom:14px;font-size:1rem}
@@ -238,7 +222,6 @@ footer{background:#0d1017;border-top:1px solid var(--line-dark);padding:48px 22p
   </a>
   <ul class="nav-links">
     <li><a href="#meat">Behind the glass</a></li>
-    <li><a href="#packs">Meat packs</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -253,7 +236,6 @@ footer{background:#0d1017;border-top:1px solid var(--line-dark);padding:48px 22p
 </nav>
 <div id="mobileMenu">
   <a href="#meat">Behind the glass</a>
-  <a href="#packs">Meat packs</a>
   <a href="#about">About</a>
   <a href="#reviews">Reviews</a>
   <a href="#contact">Contact</a>
@@ -348,60 +330,6 @@ footer{background:#0d1017;border-top:1px solid var(--line-dark);padding:48px 22p
   </div>
 </section>
 
-<section class="packs" id="packs">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2 style="color:#fff">Get the freezer sorted</h2>
-      <p>Made-up packs at counter prices. Grab one off the shelf or ring ahead and we will have it boxed and waiting.</p>
-    </div>
-    <div class="packs-grid">
-      <div class="pack-photo reveal"><img src="images/mince-packs.jpg" alt="Vacuum-packed mince and patties boxed for the freezer" loading="lazy" width="1086" height="1448"></div>
-      <article class="pack-card reveal">
-        <h3>Value Pack</h3>
-        <div class="pack-price">$39</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g beef mince</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g sausages</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g frying steak</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>480g patties</li>
-        </ul>
-      </article>
-      <article class="pack-card reveal">
-        <h3>BBQ Pack</h3>
-        <div class="pack-price">$55</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>650g BBQ steak</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>650g lamb chops</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>800g BBQ sausages</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>480g patties</li>
-        </ul>
-      </article>
-      <article class="pack-card reveal">
-        <h3>Midweek Pack</h3>
-        <div class="pack-price">$74</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>3x filled chicken breast</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>700g beef mince</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>700g sausages</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>500g pork strips</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>800g beef patties</li>
-        </ul>
-      </article>
-      <article class="pack-card reveal">
-        <h3>Family Pack</h3>
-        <div class="pack-price">$119</div>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg sausages</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg beef mince</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg lamb chops</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1kg rump steak</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>1.5kg roast + family pie</li>
-        </ul>
-      </article>
-    </div>
-    <p class="packs-note">Pack contents rotate with what is in the cabinet. Ring the shop for today's line-up or to put together a custom order.</p>
-  </div>
-</section>
 
 <section class="about" id="about">
   <div class="wrap about-grid">
@@ -565,7 +493,6 @@ footer{background:#0d1017;border-top:1px solid var(--line-dark);padding:48px 22p
     </div>
     <ul class="foot-links">
       <li><a href="#meat">Behind the glass</a></li>
-      <li><a href="#packs">Meat packs</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="terms.html">Terms &amp; Conditions</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
